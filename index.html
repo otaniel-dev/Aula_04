@@ -1,1 +1,33 @@
-
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula_04</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <div class="logo">
+      <img src="https://i.postimg.cc/GpCxYmvc/title.png" alt="Logo da Imersão Dev" />
+    </div>
+  
+    <div class="titulo">
+      <h2>Força ou Queda</h2>
+    </div>
+  
+    <main class="conteudo-jogo">
+      <div id="container">
+        <h2>Escolha 3 jogadores para seu time:</h2>
+        
+        <button class="botao-jogar" onclick="jogar()">Jogar</button>
+        <p id="informacoesJogador" class="resultado"></p>
+        <p id="informacoesComputador" class="resultado"></p>
+        <h1 id="resultadoFinal" class="resultado"></h1>
+    </main>
+  
+  </body>
+  <footer>
+    <button class="reload" onclick="reload()">Jogar Novamente</button>
+  </footer>
+</html>
