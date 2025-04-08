@@ -1,0 +1,252 @@
+body {
+    background: url("https://i.postimg.cc/TY28jTqJ/bg4-ia.jpg") no-repeat center
+      center fixed;
+    background-size: cover;
+    font-family: "Gabarito", sans-serif;
+    margin: 20px;
+  }
+  
+  .logo {
+    text-align: end;
+  }
+  
+  .logo img {
+    width: 40%;
+  }
+  
+  /* Caixa principal do jogo */
+  .conteudo-jogo {
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 5px #ff1b7b;
+    margin: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+
+  
+  .conteudo-jogo:hover {
+    background: rgba(0, 0, 0);
+    box-shadow: 0 0 5px #19caca;
+  }
+  
+  /* Títulos e textos */
+  h2,
+  p {
+    color: white;
+  }
+  
+
+  
+  button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    background: #ff1b7b;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: #19caca;
+  }
+  
+  /* Estilo específico para o botão-jogar */
+  .botao-jogar {
+    background-color: #ff1b7b;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    margin: 15px auto;
+    display: block;
+  }
+  
+  .botao-jogar:hover {
+    background-color: #19caca;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  }
+  
+  .botao-jogar:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Estilo para o Resultado Final */
+  #resultadoFinal {
+    color: white;
+    font-size: 2em;
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: color 0.3s ease;
+  }
+  
+  #resultadoFinal.fim-do-jogo {
+    color: #19caca;
+  }
+  
+  /* Estilo para esconder o botão no fim do jogo */
+  .botao-jogar.escondido {
+    display: none;
+  }
+  
+  .reload {
+    display: block;
+    margin: 2rem auto;
+    background-color: #ff1b7b;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 5px;
+  }
+
+  .reload:hover {
+    background-color: #19caca;
+  }
+  
+  /* Estilos para a tabela de forças */
+  .time-info {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+  }
+
+  .time-info h3 {
+    color: #ff1b7b;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+  }
+
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ff1b7b;
+  }
+
+  th {
+    color: #19caca;
+    font-weight: bold;
+  }
+
+  .forca {
+    text-align: center;
+    font-weight: bold;
+    color: #ff1b7b;
+  }
+
+  .total {
+    background: rgba(255, 27, 123, 0.1);
+    font-weight: bold;
+  }
+
+  .total .forca {
+    color: #19caca;
+    font-size: 1.2em;
+  }
+  
+  /* Estilos para os cards de personagens */
+  .time-container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+  }
+
+  .time-title {
+    color: #ff1b7b;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .card {
+    background: rgba(255, 27, 123, 0.1);
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .personagem-nome {
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+
+  .forca-valor {
+    color: #19caca;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+
+  .barra-forca {
+    background: rgba(255, 255, 255, 0.1);
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .progresso {
+    height: 100%;
+    background: linear-gradient(90deg, #ff1b7b, #19caca);
+    border-radius: 5px;
+    transition: width 0.5s ease;
+  }
+
+  .total-container {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(25, 202, 202, 0.1);
+    border-radius: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .total-container span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+  }
+
+  .total-container span:first-child {
+    margin-bottom: 10px;
+  }
+
+  .total-valor {
+    color: #19caca;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  
